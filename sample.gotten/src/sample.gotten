@@ -1,0 +1,22 @@
+metamodel datacentre "/sample.gotten/model/datac.ecore" with m1, m2
+models "/sample.gotten/model/dcmodels"
+metamodel workload "/sample.gotten/model/workload.ecore" with w1, w2
+models "/sample.gotten/model/workloads"
+
+datacentre input Features {
+	context DataCentre def: NNodes: Int = "racks->collect(numBoards*board.nodesPerBoard)->sum()"
+	context DataCentre def: CPU: Int = "racks->collect(
+            numBoards*board.nodesPerBoard*board.nodeType.CPUCores*board.nodeType.CPUSpeed)->sum()"
+}
+output Features {
+	Time : Long
+	Energy : Long
+}
+Processor {
+	Name: String
+	Version: String
+}
+MetamorphicRelations {
+	MR1 = [(( NNodes(m1) > NNodes(m2) ) and ((w1) == (w2)) ) implies ((Time(m1) <= Time(m2)))]
+	MR2 = [(( CPU(m1) > CPU(m2) ) and ((w1) == (w2)) ) implies ((Energy(m1) <= Energy(m2)))]
+}
