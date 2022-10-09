@@ -23,6 +23,24 @@ public class FitnessFunctionForDatac_mr2 {
 		double cpu = 0.0;
 		if (processed.contains(eObject) == false) {
 			for (EAttribute att : eObject.eClass().getEAllAttributes()) {
+				if (att.getName().equals("numBoards")) {
+					Object value = ModelManager.getAttributeValue(att.getName(), eObject);
+					if (value instanceof Integer) {
+						if ((int) value != 0) {
+							cpu += (int) value;
+						}
+					}
+					if (value instanceof Float) {
+						if ((float) value != 0) {
+							cpu += (float) value;
+						}
+					}
+					if (value instanceof Double) {
+						if ((double) value != 0) {
+							cpu += (double) value;
+						}
+					}
+				}
 				if (att.getName().equals("nodesPerBoard")) {
 					Object value = ModelManager.getAttributeValue(att.getName(), eObject);
 					if (value instanceof Integer) {
@@ -168,6 +186,22 @@ public class FitnessFunctionForDatac_mr2 {
 
 	private static double getCPu(Rack object) {
 		double cpu = 0.0;
+		Object valuenumBoards = object.getNumBoards();
+		if (valuenumBoards instanceof Integer) {
+			if ((int) valuenumBoards != 0) {
+				cpu += (int) valuenumBoards;
+			}
+		}
+		if (valuenumBoards instanceof Float) {
+			if ((float) valuenumBoards != 0) {
+				cpu += (float) valuenumBoards;
+			}
+		}
+		if (valuenumBoards instanceof Double) {
+			if ((double) valuenumBoards != 0) {
+				cpu += (double) valuenumBoards;
+			}
+		}
 		Board objectBoard = object.getBoard();
 		double result = getCPu(objectBoard);
 		if (result != 0) {
