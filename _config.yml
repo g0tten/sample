@@ -13,6 +13,7 @@ navbar:
   - name: Update-site
     link: /gotten/update-site
   - name: Standalone Eclipse+Gotten
+    link: /sample
     subitems:
       - name: Windows version
         link: https://www.dropbox.com/s/23f86ygekiou2go/eclipse.zip?dl=0
@@ -21,17 +22,19 @@ navbar:
   - name: Ubuntu 20.04 VirtualBox VM+Gotten
     link: https://www.dropbox.com/s/m4s7rjk1tywl8cf/Ubuntu-20.04.x64-Gotten.zip?dl=0
   - name: Gotten for Cloud
+    link: /evaluation
     subitems:
       - name: Simple project
-        link: https://www.dropbox.com/s/9rz9zdk5qvr4cxf/simple.cloud.zip?dl=0
+        link: https://github.com/g0tten/sample/zipball/main
       - name: Evaluation project
-        link: https://www.dropbox.com/s/29tb79o69wazzj0/evaluation.cloud.zip?dl=0
+        link: https://github.com/g0tten/evaluation/zipball/main
   - name: Gotten for Video Streaming APIs
+    link: /video
     subitems:
       - name: YouTube
-        link: https://www.dropbox.com/s/7ha5q83fdbfbt05/video-streaming.zip?dl=0
+        link: https://github.com/g0tten/video/zipball/main
       - name: Vimeo
-        link: https://www.dropbox.com/s/7ha5q83fdbfbt05/video-streaming.zip?dl=0
+        link: https://github.com/g0tten/video/zipball/main
   
 # Build settings
 markdown: kramdown

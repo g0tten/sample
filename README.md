@@ -1,6 +1,6 @@
 ## Gotten sample project
 
-Gotten, Generic MDE framework fOr meTamorphic TEstiNg, sample project.
+Gotten, Generic MDE framework fOr meTamorphic TEstiNg, cloud simple project.
 
 ### Acknowledgements
 
