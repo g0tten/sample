@@ -1,7 +1,7 @@
 # Site settings
 title: "The Gotten Framework"
 url: "https://g0tten.github.io"
-baseurl: "/gotten"
+baseurl: "/sample"
 description: "Generic MDE framework fOr meTamorphic TEstiNg"
 gtag: "UA-61793148-6"
 favicon: "/images/favicon.ico"
