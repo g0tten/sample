@@ -1,6 +1,11 @@
 ## Gotten cloud simple project
 
-Gotten, Generic MDE framework fOr meTamorphic TEstiNg, sample project.
+Gotten, Generic MDE framework fOr meTamorphic TEstiNg, cloud simple project.
+
+### Gotten for cloud projects
+
+- [Gotten for cloud simple project](https://github.com/g0tten/sample/zipball/main)
+- [Gotten for cloud evaluation project](https://github.com/g0tten/evaluation/zipball/main)
 
 ### Acknowledgements
 
