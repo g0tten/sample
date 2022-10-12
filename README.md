@@ -45,7 +45,7 @@ Relation | Description |
 --- | :--- | 
 MR1 | The cloud m1 contains more nodes than the cloud m2. The workloads w1 and w2 are equal. |
 &nbsp; | MR1i = [( NNodes(m1) > NNodes(m2) ) and ((w1) == (w2)) ] |
-&nbsp; | The time required to execute w1 over m1 should be less than or equal to the time required to exeute w2 over m2. |
+&nbsp; | The time required to execute w1 over m1 should be less than or equal to the time required to execute w2 over m2. |
 &nbsp; | MR1o = [ (Time(m1) <= Time(m2)) ] |
 MR2 | The cloud m1 contains more physical machines than the cloud m2. The workloads w1 and w2 are equal. |
 &nbsp; | MR2i = [( CPU(m1) > CPU(m2) ) and ((w1) == (w2)) ] |
