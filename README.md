@@ -35,7 +35,6 @@ MetamorphicRelations {
 	MR1 = [(( NNodes(m1) > NNodes(m2) ) and ((w1) == (w2)) ) implies ((Time(m1) <= Time(m2)))]
 	MR2 = [(( CPU(m1) > CPU(m2) ) and ((w1) == (w2)) ) implies ((Energy(m1) <= Energy(m2)))]
 }
-
 ```
 
 ### MRs for data centres brief description
