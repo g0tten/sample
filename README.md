@@ -1,4 +1,4 @@
-## Gotten cloud simple project
+## Gotten for cloud simple project
 
 ### Gotten for cloud simulators running example
 
